@@ -1,0 +1,8 @@
+{
+  "id": "114971000000620003",
+  "api_name": "ZST_findOldEstimate",
+  "display_name": "ZST_findOldEstimate",
+  "category": "standalone",
+  "language": "deluge",
+  "description": "Sucht nach bereits vorhandenem Angebot für diesen Deal und löscht ein ev vorhandenes Angebot"
+}
