@@ -1,0 +1,8 @@
+{
+  "id": "114971000000671015",
+  "api_name": "ZST_UpdateZahlungszielByAccount",
+  "display_name": "ZST_UpdateZahlungszielByAccount",
+  "category": "automation",
+  "language": "deluge",
+  "description": null
+}
