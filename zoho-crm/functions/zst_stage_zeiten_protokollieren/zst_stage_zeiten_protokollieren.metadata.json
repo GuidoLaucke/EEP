@@ -1,0 +1,8 @@
+{
+  "id": "114971000000113001",
+  "api_name": "zst_stage_zeiten_protokollieren",
+  "display_name": "ZST_Stage_Zeiten_protokollieren",
+  "category": "automation",
+  "language": "deluge",
+  "description": null
+}
