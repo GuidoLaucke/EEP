@@ -1,0 +1,23 @@
+string standalone.ZST_getBalance_from_People_by_IDS()
+{
+liste_der_MA = {32401000000685400,32401000000685693,32401000000685660,32401000000143001,32401000000685530,32401000000685596,32401000000685367,32401000000687043,32401000000685823,32401000000685171,32401000000685105,32401000000685792,32401000000685563,32401000000685138,32401000000685270,32401000000685726,32401000000685010,32401000000685204,32401000000690382,32401000000685627,32401000000685499,32401000000685466};
+//liste_der_MA = {32401000000682977,32401000000887459,32401000000685237,32401000000685041,32401000000682944};
+for each  MA_id in liste_der_MA
+{
+	result = standalone.ZST_getBalanceForEmployee("31-Jan-2024","31-Jan-2024","Day",MA_id,"");
+	//info "result: " + result;
+	if(result.size() > 0)
+	{
+		name = result.get(MA_id.toString()).get("name");
+		liste = result.get(MA_id.toString()).get("freizeitart");
+		for each  ele in liste.keys()
+		{
+			if(ele.contains("Urlaub"))
+			{
+				info "Name: " + name + " Art: " + ele.keys() + " Wert: " + ele.values();
+			}
+		}
+	}
+}
+return "";
+}
